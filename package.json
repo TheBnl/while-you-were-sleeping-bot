@@ -1,5 +1,5 @@
 {
-  "name": "WYWS Twitter Bot",
+  "name": "WYWS-Twitter-Bot",
   "version": "0.0.1",
   "description": "Text generating twitterbot; #WhileYouWereSleeping we were dreaming of elecrtic sheep",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "twit": "~1.x"
+    "twit": "*"
   },
   "engines": {
     "node": "0.12.2"
@@ -23,3 +23,4 @@
     "wyws"
   ],
   "license": "MIT"
+}
