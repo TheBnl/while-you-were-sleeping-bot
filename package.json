@@ -1,0 +1,25 @@
+{
+  "name": "WYWS Twitter Bot",
+  "version": "0.0.1",
+  "description": "Text generating twitterbot; #WhileYouWereSleeping we were dreaming of elecrtic sheep",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "twit": "~1.x"
+  },
+  "engines": {
+    "node": "0.12.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thebnl/"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "twitter",
+    "wyws"
+  ],
+  "license": "MIT"

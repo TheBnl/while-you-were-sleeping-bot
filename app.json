@@ -1,0 +1,6 @@
+{
+  "name": "WYWS Twitter Bot",
+  "description": "Text generating twitterbot; #WhileYouWereSleeping we were dreaming of elecrtic sheep",
+  "repository": "https://github.com/thebnl/",
+  "keywords": ["node", "twitter", "wyws", "heroku"]
+}
