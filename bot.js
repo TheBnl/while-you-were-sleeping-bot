@@ -82,10 +82,15 @@ function getRandomAction() {
   var actions = [
     "I was",
     "I put",
-    "I dreamt",
-    "I grew",
+    //"I dreamt",
+    //"I grew",
     "we were",
-    "we made"
+    "we made",
+    "we designed",
+    "we created",
+    "I designed",
+    "I created",
+    "I made"
   ];
   return getRandom(actions);
 }
