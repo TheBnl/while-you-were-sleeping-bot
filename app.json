@@ -2,5 +2,5 @@
   "name": "WYWS Twitter Bot",
   "description": "Text generating twitterbot; #WhileYouWereSleeping we were dreaming of elecrtic sheep",
   "repository": "https://github.com/TheBnl/while-you-were-sleeping-bot",
-  "keywords": ["node", "twitter", "wyws", "heroku"]
+  "keywords": ["node", "twitter", "wyws", "openshift"]
 }
