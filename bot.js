@@ -36,15 +36,27 @@ Bot.addAction("postNewSentence", function(twitter, action, tweet) {
       console.log('LENGTH', sentence.length);
       console.log('SENTENCE', sentence);
 
-      // TODO at a random roll to tweet or not to tweet
-      // if the action runs every hour in a day it should only tweet three times
-      // chance of 1 in 8
-      if (sentence.length < 140) {
-        //Bot.tweet(sentence);
+      if (sentence.length < 140 && rollDice(8)) {
+        console.log('TWEETING', sentence);
+        Bot.tweet(sentence);
       }
     }
   });
 });
+
+
+/**
+ *  Utility function to roll a dice between 0 and a given number
+ *  if the rolled number is 1 it returns true.
+ *  @author Bram de Leeuw
+ *
+ *  @param  Int max
+ *  @return Bool
+ */
+function rollDice(max) {
+  var random = Math.floor(Math.random() * max);
+  return random == 1 ? true : false;
+}
 
 
 /**
@@ -63,11 +75,11 @@ function getRandom(options) {
 /**
  *  Get a random action from an array of options
  *  @author Bram de Leeuw
+ *
  *  @return getRandom(actions) option
  */
 function getRandomAction() {
   var actions = [
-    //"I",
     "I was",
     "I put",
     "I dreamt",
@@ -125,9 +137,6 @@ function createNewSentence() {
       sentence = wyws +" "+ quote +".";
     }
   });
-
-
-  //sentence = wyws +" "+ action +" "+ partTwo +".";
 
   console.log("LOGGING"+ sentence);
   return sentence;
