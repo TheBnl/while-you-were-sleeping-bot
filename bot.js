@@ -103,7 +103,7 @@ function getRandomAction() {
  */
 function stripQuote(quote, action) {
   var fullQuote = quote.toLowerCase();
-  var strippedQuote = fullQuote.slice( fullQuote.indexOf(action.toLowerCase()) );
+  var strippedQuote = quote.slice( fullQuote.indexOf(action.toLowerCase()) );
   var splitQuote = strippedQuote.split(/\.|\,/);
 
   return splitQuote[0];
